@@ -31,6 +31,16 @@
 ```bash
 $ npm install
 ```
+## Seeding Database
+
+```bash
+## Run seeders normally
+$ npm run seed
+
+##Run seeders and replace existing data
+$ npm run seed:refresh
+
+```
 
 ## Running the app
 
@@ -43,6 +53,8 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
+The app run on port 3000. Mongodb must be installes and running
 ```
 
 ## Test
@@ -71,3 +83,33 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+Api-endpoints
+
+## GET
+
+/gateways  --Retrives all gateways
+/gateways/gatewayID --Retrieves the gateway with id=gatewayID
+
+/devices --Retrieves all devices
+/devices/deviceID  --Retrieves the devie with id=deviceID
+
+## POST
+
+/gateways/create --Create new Gateway
+
+/devices/create --Create new device
+
+## DELETE
+
+/gateways/gatewayID  --Delete the gateway with id=gatewayID
+
+/devices/deviceID --Delete the gateway with id=deviceID
+
+## PUT
+
+/gateways/gatewayID  --Update the gateway with id=gatewayID
+
+/devices/deviceID --Update the gateway with id=deviceID
+
+
