@@ -4,7 +4,7 @@ import { MongooseModule } from "@nestjs/mongoose";
 import {gatewaySchema } from "./seeders/schemas/gateway.schema";
 import { GatewaySeeder } from "./seeders/gateway.seeder";
 import { deviceSchema } from "./seeders/schemas/device.schema";
-import { DeviceSeeder } from "./seeders/device.seeder";
+
 
 seeder({
   imports: [
@@ -14,4 +14,4 @@ seeder({
       { name: 'Device', schema: deviceSchema },
     ]),
   ],
-}).run([GatewaySeeder,DeviceSeeder]);
+}).run([GatewaySeeder]);

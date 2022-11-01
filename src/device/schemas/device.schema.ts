@@ -5,7 +5,7 @@ export const DeviceSchema = new Schema({
   uid: {
     type: Number,
     unique: true,
-    require: true
+    sparse: true,
   },
   vendor:String,
   status:{

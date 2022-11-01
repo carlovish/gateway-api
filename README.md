@@ -91,25 +91,18 @@ Api-endpoints
 /gateways  --Retrives all gateways
 /gateways/gatewayID --Retrieves the gateway with id=gatewayID
 
-/devices --Retrieves all devices
-/devices/deviceID  --Retrieves the devie with id=deviceID
-
 ## POST
 
-/gateways/create --Create new Gateway
-
-/devices/create --Create new device
+/gateways --Create new Gateway
+/gateways/gatewayID/devie --Add new Device to Gateway with id=gatewayID
 
 ## DELETE
 
 /gateways/gatewayID  --Delete the gateway with id=gatewayID
-
-/devices/deviceID --Delete the gateway with id=deviceID
+/gateways/gatewayID/device/uid --Delete the Device uid from gateway gatewayID
 
 ## PUT
 
 /gateways/gatewayID  --Update the gateway with id=gatewayID
-
-/devices/deviceID --Update the gateway with id=deviceID
-
+/gateways/gatewayID/device/uid --Update device uid for Gateway gatewayID
 
